@@ -75,7 +75,7 @@ if(isset($_SESSION["uid"])){
 							<div class="panel panel-primary">
 								<div class="panel-heading">Login</div>
 								<div class="panel-heading">
-									<form onsubmit="return false" id="login">
+									<form onsubmit="login.php" id="login">
 										<label for="email">Email</label>
 										<input type="email" class="form-control" name="email" id="email" required/>
 										<label for="email">Password</label>

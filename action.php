@@ -243,7 +243,7 @@ if (isset($_POST["Common"])) {
 	if (isset($_POST["checkOutDetails"])) {
 		if (mysqli_num_rows($query) > 0) {
 			//display user cart item with "Ready to checkout" button if user is not login
-			echo "<form method='post' action='login_form.php'>";
+			echo "<form method='post' action='cart_process.php'>";
 				$n=0;
 				while ($row=mysqli_fetch_array($query)) {
 					$n++;
@@ -277,11 +277,14 @@ if (isset($_POST["Common"])) {
 							<div class="col-md-4">
 								<b class="net_total" style="font-size:20px;"> </b>
 					</div>';
-				if (!isset($_SESSION["uid"])) {
+				if (isset($_SESSION["uid"])) {
 					echo '<input type="submit" style="float:right;" name="login_user_with_product" class="btn btn-info btn-lg" value="Ready to Checkout" >
 							</form>';
+						
+
+
 					
-				}else if(isset($_SESSION["uid"])){
+				}/*else if(isset($_SESSION["uid"])){
 					//Paypal checkout form
 					echo '
 						</form>
@@ -312,7 +315,7 @@ if (isset($_POST["Common"])) {
 										src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/blue-rect-paypalcheckout-60px.png" alt="PayPal Checkout"
 										alt="PayPal - The safer, easier way to pay online">
 								</form>';
-				}
+				}*/
 			}
 	}
 	
