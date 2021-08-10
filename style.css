@@ -20,7 +20,14 @@
 	top:30%;
 	animation:loader 2s linear infinite;
 }
-
+@keyframes loader{
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
 .loader:after{
 	content: "";
     width: 35px;

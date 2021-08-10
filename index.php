@@ -34,7 +34,7 @@ if(isset($_SESSION["uid"])){
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+				<li><a href="home.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 				<li><a href="index.php"><span class="glyphicon glyphicon-modal-window"></span> Products</a></li>
 			</ul>
 			<form class="navbar-form navbar-left">
@@ -57,7 +57,12 @@ if(isset($_SESSION["uid"])){
 							</div>
 							<div class="panel-body">
 								<div id="cart_product">
-							
+								<!--<div class="row">
+									<div class="col-md-3">Sl.No</div>
+									<div class="col-md-3">Product Image</div>
+									<div class="col-md-3">Product Name</div>
+									<div class="col-md-3">Price in $.</div>
+								</div>-->
 								</div>
 							</div>
 							<div class="panel-footer"></div>
@@ -98,22 +103,10 @@ if(isset($_SESSION["uid"])){
 			<div class="col-md-2 col-xs-12">
 				<div id="get_category">
 				</div>
-				<!--<div class="nav nav-pills nav-stacked">
-					<li class="active"><a href="#"><h4>Categories</h4></a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-				</div> -->
+				
 				<div id="get_brand">
 				</div>
-				<!--<div class="nav nav-pills nav-stacked">
-					<li class="active"><a href="#"><h4>Brand</h4></a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-				</div> -->
+				
 			</div>
 			<div class="col-md-8 col-xs-12">
 				<div class="row">
@@ -124,19 +117,9 @@ if(isset($_SESSION["uid"])){
 					<div class="panel-heading">Products</div>
 					<div class="panel-body">
 						<div id="get_product">
-							<!--Here we get product jquery Ajax Request-->
+							
 						</div>
-						<!--<div class="col-md-4">
-							<div class="panel panel-info">
-								<div class="panel-heading">Samsung Galaxy</div>
-								<div class="panel-body">
-									<img src="product_images/images.JPG"/>
-								</div>
-								<div class="panel-heading">Rs.500.00
-									<button style="float:right;" class="btn btn-danger btn-xs">AddToCart</button>
-								</div>
-							</div>
-						</div> -->
+						
 					</div>
 					<div class="panel-footer">&copy; <?php echo date("Y"); ?></div>
 				</div>
