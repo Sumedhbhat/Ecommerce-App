@@ -22,10 +22,17 @@
 </div>
 <div class="welcome-text">
         <h1>
-<span>One-Stop Solution </span>for all your shopping desires</h1>
-<a href="index.php">Check out our products</a>
-<a href="about.php">About Us</a>
-<a href="contact.php">Contact US</a>
+<span>Contact US</span></h1>
+<h2>
+<br/>
+SumedhBhat</h2><h2>sumedhbhat01@gmail.com</h2><h2>
+Sujay M </h2><h2>Sujaym@gmail.com</h2>
+<br><br>
+<h3>
+Customer Care
+</h3>
+<h2>1234556789</h2>
+
     </div>
 </header>
 

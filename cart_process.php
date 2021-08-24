@@ -15,9 +15,11 @@ session_start();
 <body>
     
 <?php
+            $userid = $_SESSION["uid"];
             include_once "db.php";
             $user=$_SESSION["uid"];
-            $query="delete from cart";
+            $query1="insert into ordered values()";
+            $query="delete from cart where user_id='$userid'";
             $runquery=mysqli_query($con,$query) or die(mysqli_errno($con));
         ?>
         <div class="box">

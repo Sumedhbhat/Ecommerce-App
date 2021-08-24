@@ -27,11 +27,11 @@ require "config/constants.php";
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand">Ecommerce</a>
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+				<li><a href="home.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+				
 				<li><a href="index.php"><span class="glyphicon glyphicon-modal-window"></span>Product</a></li>
 			</ul>
 		</div>
@@ -63,7 +63,11 @@ require "config/constants.php";
 							<div class="col-md-2 col-xs-2"><b>Price in <?php echo CURRENCY; ?></b></div>
 						</div>
 						<div id="cart_checkout"></div>
-						
+							
+							<div class="checkout">
+							<a href="cart_process.php"> Checkout</a>
+							</div>
+							
 						</div> 
 					</div>
 					<div class="panel-footer"></div>

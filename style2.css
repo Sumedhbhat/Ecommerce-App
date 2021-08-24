@@ -48,14 +48,23 @@ header {
 	position: absolute;
 	width: 600px;
 	height: 300px;
+	top: 25%;
+	left:35%;
+	transform: translate(-100%,-100%);
 	margin: 20% 30%;
 	text-align: center;
+	/*-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-100%,-100%);
+	-ms-transform: translate(-100%,-100%);
+	-o-transform: translate(-100%,-100%);
+	*/
+	-webkit-transform: translate(-100%,-100%);
 }
 .welcome-text h1 {
 	text-align: center;
 	color: #fff;
-	text-transform: uppercase;
-	font-size: 60px;
+
+	font-size: 50px;
 }
 .welcome-text h1 span {
 	color: #00fecb;
@@ -64,7 +73,7 @@ header {
 	border: 1px solid #fff;
 	padding: 10px 25px;
 	text-decoration: none;
-	text-transform: uppercase;
+
 	font-size: 14px;
 	margin-top: 20px;
 	display: inline-block;
@@ -108,4 +117,15 @@ header {
 	.welcome-text h1 {
 		font-size: 30px;
 	}
+}
+
+h2{
+	color:#fff;
+}
+
+h3{
+	text-align: center;
+	color: #00fecb;
+
+	font-size: 40px;
 }
