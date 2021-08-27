@@ -91,6 +91,6 @@ if (mysqli_query($con, $updatequery)) {
 
   $_SESSION['name']=$fname;
 		$con->close();
+		header("Location: index.php");
+		exit();
 	?>
-  <a href="home.php">Home </a>
-

@@ -30,7 +30,7 @@ if(!isset($_SESSION["uid"])){
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+				<li><a href="home.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 				<li><a href="index.php"><span class="glyphicon glyphicon-modal-window"></span> Product</a></li>
 				<li style="width:300px;left:10px;top:10px;"><input type="text" class="form-control" id="search"></li>
 				<li style="top:10px;left:20px;"><button class="btn btn-primary" id="search_btn">Search</button></li>
@@ -49,7 +49,7 @@ if(!isset($_SESSION["uid"])){
 							</div>
 							<div class="panel-body">
 								<div id="cart_product">
-								
+									
 								</div>
 							</div>
 							<div class="panel-footer"></div>
@@ -60,8 +60,7 @@ if(!isset($_SESSION["uid"])){
 					<ul class="dropdown-menu">
 						<li><a href="cart.php" style="text-decoration:none; color:black;"><span class="glyphicon glyphicon-shopping-cart"> Cart</a></li>
 						<li class="divider"></li>
-						<li><a href="customer_order.php" style="text-decoration:none; color:black;">Orders</a></li>
-						<li class="divider"></li>
+						
 						<li><a href="Profile-edit1.php" style="text-decoration:none; color:black;">Edit Profile</a></li>
 						<li class="divider"></li>
 						<li><a href="logout.php" style="text-decoration:none; color:black;">Logout</a></li>
