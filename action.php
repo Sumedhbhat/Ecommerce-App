@@ -76,10 +76,12 @@ if(isset($_POST["getProduct"])){
 								</div>
 								<div class='panel-heading'>".CURRENCY.". $pro_price.00/-
 									<button pid='$pro_id' style='float:right;' id='product' class='btn btn-danger btn-xs'>Add To Cart</button>
+									
 								</div>
 							</div>
 						</div>	
 			";
+			
 		}
 	}
 }
@@ -243,7 +245,7 @@ if (isset($_POST["Common"])) {
 	if (isset($_POST["checkOutDetails"])) {
 		if (mysqli_num_rows($query) > 0) {
 			//display user cart item with "Ready to checkout" button if user is not login
-			echo "<form method='post' action='cart_process1.php'>";
+			echo "<form method='post' action='cart_process.php'>";
 				$n=0;
 				while ($row=mysqli_fetch_array($query)) {
 					$n++;

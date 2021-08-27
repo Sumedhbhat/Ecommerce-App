@@ -26,7 +26,7 @@ if(!isset($_SESSION["uid"])){
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand">Ecommerce Site</a>
+				<a href="home.php" class="navbar-brand">Ecommerce Site</a>
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
@@ -62,7 +62,8 @@ if(!isset($_SESSION["uid"])){
 						<li class="divider"></li>
 						<li><a href="customer_order.php" style="text-decoration:none; color:black;">Orders</a></li>
 						<li class="divider"></li>
-						
+						<li><a href="Profile-edit1.php" style="text-decoration:none; color:black;">Edit Profile</a></li>
+						<li class="divider"></li>
 						<li><a href="logout.php" style="text-decoration:none; color:black;">Logout</a></li>
 					</ul>
 				</li>

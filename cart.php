@@ -63,10 +63,7 @@ require "config/constants.php";
 							<div class="col-md-2 col-xs-2"><b>Price in <?php echo CURRENCY; ?></b></div>
 						</div>
 						<div id="cart_checkout"></div>
-							
-							<div class="checkout">
-							<a href="cart_process.php"> Checkout</a>
-							</div>
+					
 							
 						</div> 
 					</div>

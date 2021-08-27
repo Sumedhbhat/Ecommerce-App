@@ -13,12 +13,13 @@ session_start();
     <title>Checkout</title>
 </head>
 <body>
-    
 <?php
             $userid = $_SESSION["uid"];
             include_once "db.php";
             $user=$_SESSION["uid"];
-            $query1="insert into ordered values()";
+            
+			//$query1="Insert into order values('$orderid','')";
+            
             $query="delete from cart where user_id='$userid'";
             $runquery=mysqli_query($con,$query) or die(mysqli_errno($con));
         ?>
